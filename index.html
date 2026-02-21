@@ -132,20 +132,25 @@
       background: rgba(9, 9, 11, 0.98);
       padding: 1rem 1.5rem 1.5rem;
       border-bottom: 1px solid var(--zinc-800);
-      gap: 0.5rem;
-      align-items: flex-start;
+      gap: 0;
+      align-items: stretch;
     }
 
     .nav-links.open a {
-      padding: 0.75rem 0;
-      width: 100%;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--zinc-800);
+    }
+
+    .nav-links.open a:last-child {
+      border-bottom: none;
     }
 
     .nav-links.open .nav-cta {
-      margin-top: 0.5rem;
+      margin-top: 1rem;
+      padding: 1rem;
       text-align: center;
-      width: 100%;
-      display: block;
+      border-bottom: none;
+      border-radius: 4px;
     }
 
     @media (min-width: 768px) {
